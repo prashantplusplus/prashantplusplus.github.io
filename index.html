@@ -1,1 +1,163 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prashant Gupta</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Github Site of Prashant Gupta">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: 'GUPTA';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Prashant Gupta</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#experiences">Experiences</a></li>
+				        <li><a href="#educations">Education</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Prashant Gupta</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/prashant.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I live in<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					I am a Full Stack Developer. <br>
+                    Currently pursuing my Masters' at University of Southern California, Los Angeles, CA.</br>
+                    Please check my website below for more details. :)</br>
+                    <a target="_blank" href="https://drive.google.com/file/d/1OLXDyI5U5FdkE8wrY3PbhIKdP4v-2ek6/view"/>My Resume&nbsp; <i style="font-size: 12px;" class="fa fa-external-link"></i></a>
+                </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>Aug 2017- Oct 2019</li>
+				<li><a href="#">Bunad Technologies Services Pvt Ltd</a></li>
+				<li>Full Stack Developer | JS, Cordova, Php, NodeJS</li>
+			</ul>
+			<ul class="work-list">
+				<li>Jun 2021-Present</li>
+				<li><a href="#">Information Sciences Institute</a></li>
+				<li>Full Stack Web Developer | Angular, Python, MongoDB</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Award & Achievements -->
+	<div class="education section second" id="educations">
+		<div class="container">
+			<h1>Education</h1>
+			<br>
+				Jan 2021- Dec 2022
+                <br>
+				<a href="https://www.usc.edu/">University Of Southern California</a>
+                <br>
+				Masters in Computer Science
+			<br>
+            <br>
+				Aug 2013- Dec 2017
+                <br>
+				<a href="#">University Of Burdwan</a>
+                <br>
+				Bachelor of Engineering in Computer Science & Engineering
+			<br>
+            <br>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list list-flat">
+				<li>Web Technology</li>
+				<li>HTML / CSS / SASS / PHP / Javascript / NodeJS</li>
+			</ul>
+            <ul class="skill-list list-flat">
+				<li>Core</li>
+				<li>C++ / MPI, OpenGl, OpenMP, CUDA</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MySQL / MongoDB</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Angular / ReactJS / P5.js / Three.js</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>Blessed are the curious,<br>for they shall have adventures</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Contact Me:</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a target="_blank" href="mailto:guptapra@usc.edu"><i class="fa fa-send"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/prashant333777/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/prashantplusplus"><i class="fa fa-github"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Los Angeles", "My Room", "Inside The Matrix"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
